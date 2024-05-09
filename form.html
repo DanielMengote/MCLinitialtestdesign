@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - QuickStart Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+
+  <!-- navbar -->
+  <link rel="stylesheet" href="navbar.css">
+  <!-- navbar icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+
+<style>
+
+  .canvass-bg { 
+    background-color: rgb(238, 238, 238);
+  }
+
+  .main-color {
+    background-color: rgb(1, 75, 174);
+  }
+
+
+</style>
+
+</head>
+<body class="canvass-bg" >
+
+    <!-- As a link -->
+    <nav id="web-nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+      <!-- navbar-expand-lg collapse the item when screen size is less than lg or 992 px -->
+      <div class="container-lg container-xxl">
+          <!-- Constrain the three column from expanding when screen size is lg or xxl -->
+
+          <!---------------------------->
+          <div class="navbar-nav navbar-brand">
+              <!-- First column: logo -->
+              <a class="mb-2" href="#">
+                  <img src="img/4Ps_Party_list_Logo_6.png" alt="4Ps Party list logo"
+                      style="width: 37px; height: 60px;">
+              </a>
+              <a class="" href="#">
+                  <img src="img/MCL_Logo_5.png" alt="MCL logo" style="width: 180px; height: 73px;">
+              </a>
+          </div>
+          <!---------------------------->
+
+          <!---------------------------->
+          <!-- Second column: 6 items -->
+          <ul class="navbar-nav">
+              <li id="nav-item-2" class="nav-item">
+                  <a class="dropdown-item dropdown-item-1 active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li id="nav-item-1" class="nav-item">
+                  <a class="dropdown-item dropdown-item-1" aria-current="page" href="about.html">ABOUT</a>
+              </li>
+              <li id="nav-item-1" class="nav-item">
+                  <a class="dropdown-item dropdown-item-1" href="#">WORKS</a>
+              </li>
+              <li id="nav-item-2" class="nav-item">
+                  <a class="dropdown-item dropdown-item-1" href="#">NEWS</a>
+              </li>
+              <li id="nav-item-1" class="nav-item dropdown">
+                  <a id="p2" class="dropdown-item" href="#" data-bs-toggle="" aria-expanded="false">
+                      SERVICES
+                      <i class="fa fa-caret-down fa-sm ms-2"></i>
+                  </a>
+                  <ul id="p1" class="dropdown-menu rounded-0 p-0">
+                    <li><a class="dropdown-item dropdown-item-1 rounded-0" href="service-details.html">Medical Assistance</a></li>
+                    <li><a class="dropdown-item dropdown-item-1" href="service-details.html">Educational Assistance</a></li>
+                    <li><a class="dropdown-item dropdown-item-1" href="service-details.html">Burial Assistance</a></li>
+                    <li><a class="dropdown-item dropdown-item-1 rounded-0" href="service-details.html">Something else here</a></li>
+                </ul>
+              </li>
+              <li id="nav-item-1" class="nav-item">
+                  <a class="dropdown-item dropdown-item-1" href="#">EVENT</a>
+              </li>
+              <li id="nav-item-3" class="nav-item">
+                  <a class="dropdown-item dropdown-item-1" href="#">CONTACT</a>
+              </li>
+          </ul>
+          <!---------------------------->
+
+          <!---------------------------->
+          <!-- Third column: notification and account icons -->
+          <div class="navbar-nav">
+
+              <!---------------------------->
+              <!-- Notifications -->
+              <div class="dropdown">
+                  <a data-mdb-dropdown-init class="nav-link text-reset hidden-arrow" href="#"
+                      id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+
+                      <span class="fa-stack fa-1x" data-count="1">
+                          <i class="fas fa-bell fa-xl mx-2 mt-3 text-muted"></i>
+                      </span>
+
+                  </a>
+
+                  <ul class="dropdown-menu dropdown-menu-end p-0" aria-labelledby="navbarDropdownMenuLink">
+                      <li>
+                          <a class="dropdown-item rounded-top-1" href="#">Some news</a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item" href="#">Another news</a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item rounded-bottom-1" href="#">Something else here</a>
+                      </li>
+                  </ul>
+              </div>
+              <!---------------------------->
+
+              <!---------------------------->
+              <!-- Avatar -->
+              <div class="dropdown">
+                  <a data-mdb-dropdown-init class="nav-link d-flex align-items-center hidden-arrow" href="#"
+                      id="navbarDropdownMenuAvatar" role="button" aria-expanded="false">
+                      <!-- <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy" /> -->
+                      <i class="fas fa-circle-user fa-2x" aria-hidden="true"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end p-0" aria-labelledby="navbarDropdownMenuAvatar">
+                      <li>
+                          <a class="dropdown-item rounded-top-1" href="signin.html">My profile</a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item" href="#">Settings</a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item rounded-bottom-1" href="#">Logout</a>
+                      </li>
+                  </ul>
+              </div>
+              <!---------------------------->
+
+          </div>
+          <!---------------------------->
+
+      </div>
+
+  </nav>
+
+  <!------------------------------------>
+
+
+  <!----------------------------------->
+  <nav id="mobile-nav" class="navbar navbar-light bg-light fixed-top">
+      <div class="container-fluid" style="margin-top: -0.7rem;">
+
+          <button class="navbar-toggler m-2" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!---------------------------->
+          <!-- First column: logo -->
+          <div id="logo-mb-view" class="navbar-nav d-flex flex-row navbar-brand ms-3">
+              <a class="mb-2" href="#">
+                  <img src="img/4Ps_Party_list_Logo_6.png" alt="4Ps Party list logo"
+                      style="width: 37px; height: 60px;">
+              </a>
+              <a class="" href="#">
+                  <img src="img/MCL_Logo_5.png" alt="MCL logo" style="width: 180px; height: 73px;">
+              </a>
+          </div>
+          <!---------------------------->
+
+          <!---------------------------->
+          <!-- Third column: notification and account icons -->
+          <div class="navbar-nav d-flex flex-row">
+
+              <!---------------------------->
+              <!-- Notifications -->
+              <div id="notif-mb-view" class="dropdown">
+                  <a data-mdb-dropdown-init class="nav-link text-reset hidden-arrow p-2" href="#"
+                      id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+
+                      <span class="fa-stack fa-1x" data-count="1">
+                          <i class="fas fa-bell fa-xl mx-2 mt-3 text-muted"></i>
+                      </span>
+
+                  </a>
+
+                  <ul class="dropdown-menu dropdown-menu-end p-0" aria-labelledby="navbarDropdownMenuLink">
+                      <li>
+                          <a class="dropdown-item rounded-top-1" href="#">Some news</a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item" href="#">Another news</a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item rounded-bottom-1" href="#">Something else here</a>
+                      </li>
+                  </ul>
+              </div>
+              <!---------------------------->
+
+              <!---------------------------->
+              <!-- Avatar -->
+              <div id="avatar-mb-view" class="dropdown">
+                  <a data-mdb-dropdown-init class="nav-link d-flex align-items-center hidden-arrow p-2" href="#"
+                      id="navbarDropdownMenuAvatar" role="button" aria-expanded="false">
+                      <!-- <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy" /> -->
+                      <i class="fas fa-circle-user fa-2x" aria-hidden="true"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end p-0" aria-labelledby="navbarDropdownMenuAvatar">
+                      <li>
+                          <a class="dropdown-item rounded-top-1" href="#">My profile</a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item" href="#">Settings</a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item rounded-bottom-1" href="#">Logout</a>
+                      </li>
+                  </ul>
+              </div>
+              <!---------------------------->
+
+          </div>
+          <!---------------------------->
+
+          <!---------------------------->
+          <!-- Second column: 6 items -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation link</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+              <div class="offcanvas-body">
+
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <!-- <ul class="navbar-nav">     -->
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#">HOME</a>
+                      </li>
+
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="about.html">ABOUT</a>
+                      </li>
+
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">WORKS</a>
+                      </li>
+
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">NEWS</a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              SERVICES
+                              <i class="fa fa-caret-down fa-sm ms-2"></i>
+                          </a>
+                          <ul class="dropdown-menu p-0">
+                              <li><a class="dropdown-item rounded-top-1" href="#">Medical Assistance</a></li>
+                              <li><a class="dropdown-item" href="#">Educational Assistance</a></li>
+                              <li><a class="dropdown-item" href="#">Burial Assistance</a></li>
+                              <li><a class="dropdown-item rounded-bottom-1" href="#">Something else here</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">EVENT</a>
+                      </li>
+
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">CONTACT</a>
+                      </li>
+
+                      <li id="sm-mb-view-notif" class="nav-item">
+                          <a class="nav-link" href="#">NOTIFICATION</a>
+                      </li>
+
+                      <li id="sm-mb-view-acct" class="nav-item">
+                          <a class="nav-link" href="#">ACCOUNT</a>
+                      </li>
+                  </ul>
+
+              </div>
+
+          </div>
+          <!---------------------------->
+
+      </div>
+  </nav>
+
+
+   <!-- f1 -->
+
+
+   
+
+
+    <!-- f2 -->
+
+    <div class="container py-5 shadow my-5">
+
+        <!-- For demo purpose -->
+        <div class="row mb-4">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="display-4">Bootstrap 4 credit card form</h1>
+            <p class="lead mb-0">Easily build a well-structured credit card form using Bootstrap 4</p>
+            <p class="lead">Snippet by <a href="https://bootstrapious.com/snippets">Bootstrapious</a></p>
+          </div>
+        </div>
+        <!-- End -->
+      
+      
+        <div class="row">
+          <div class="col-lg-7 mx-auto">
+            <div class="bg-white rounded-lg shadow-lg p-5">
+              <!-- Credit card form tabs -->
+              <ul role="tablist" class="nav bg-light nav-pills rounded-pill nav-fill mb-3">
+                <li class="nav-item">
+                  <a data-toggle="pill" href="#nav-tab-card" class="nav-link active rounded-pill">
+                                      <i class="fa fa-credit-card"></i>
+                                      Credit Card
+                                  </a>
+                </li>
+                <li class="nav-item">
+                  <a data-toggle="pill" href="#nav-tab-paypal" class="nav-link rounded-pill">
+                                      <i class="fa fa-paypal"></i>
+                                      Paypal
+                                  </a>
+                </li>
+                <li class="nav-item">
+                  <a data-toggle="pill" href="#nav-tab-bank" class="nav-link rounded-pill">
+                                      <i class="fa fa-university"></i>
+                                       Bank Transfer
+                                   </a>
+                </li>
+              </ul>
+              <!-- End -->
+      
+      
+              <!-- Credit card form content -->
+              <div class="tab-content">
+      
+                <!-- credit card info-->
+                <div id="nav-tab-card" class="tab-pane fade show active">
+                  <p class="alert alert-success">Some text success or error</p>
+                  <form role="form">
+                    <div class="form-group">
+                      <label for="username">Full name (on the card)</label>
+                      <input type="text" name="username" placeholder="Jason Doe" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="cardNumber">Card number</label>
+                      <div class="input-group">
+                        <input type="text" name="cardNumber" placeholder="Your card number" class="form-control" required>
+                        <div class="input-group-append">
+                          <span class="input-group-text text-muted">
+                                                      <i class="fa fa-cc-visa mx-1"></i>
+                                                      <i class="fa fa-cc-amex mx-1"></i>
+                                                      <i class="fa fa-cc-mastercard mx-1"></i>
+                                                  </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <div class="form-group">
+                          <label><span class="hidden-xs">Expiration</span></label>
+                          <div class="input-group">
+                            <input type="number" placeholder="MM" name="" class="form-control" required>
+                            <input type="number" placeholder="YY" name="" class="form-control" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="form-group mb-4">
+                          <label data-toggle="tooltip" title="Three-digits code on the back of your card">CVV
+                                                      <i class="fa fa-question-circle"></i>
+                                                  </label>
+                          <input type="text" required class="form-control">
+                        </div>
+                      </div>
+      
+      
+      
+                    </div>
+                    <button type="button" class=" btn btn-primary w-100 rounded-pill shadow-sm"> Confirm  </button>
+                  </form>
+                </div>
+                <!-- End -->
+      
+                <!-- Paypal info -->
+                <div id="nav-tab-paypal" class="tab-pane fade">
+                  <p>Paypal is easiest way to pay online</p>
+                  <p>
+                    <button type="button" class="btn btn-primary rounded-pill"><i class="fa fa-paypal mr-2"></i> Log into my Paypal</button>
+                  </p>
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <!-- End -->
+      
+                <!-- bank transfer info -->
+                <div id="nav-tab-bank" class="tab-pane fade">
+                  <h6>Bank account details</h6>
+                  <dl>
+                    <dt>Bank</dt>
+                    <dd> THE WORLD BANK</dd>
+                  </dl>
+                  <dl>
+                    <dt>Account number</dt>
+                    <dd>7775877975</dd>
+                  </dl>
+                  <dl>
+                    <dt>IBAN</dt>
+                    <dd>CZ7775877975656</dd>
+                  </dl>
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <!-- End -->
+              </div>
+              <!-- End -->
+      
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      
+
+
+
+<!-- f4 -->
+
+<div class="container my-5 py-5 d-flex flex-column justify-content-around ">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="assistance/Cash Assistance for Other.jpg" alt="" width="100%" height="auto">
+      <h2>Checkout forms</h2>
+      <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 order-md-2 mb-4 pt-5">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Your cart</span>
+          <span class="badge badge-secondary badge-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Product name</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Second product</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Third item</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">Promo code</h6>
+              <small>EXAMPLECODE</small>
+            </div>
+            <span class="text-success">-$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>$20</strong>
+          </li>
+        </ul>
+
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Promo code">
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-secondary">Redeem</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="col-md-8 order-md-1 shadow bg-white p-5 ">
+        <h4 class="mb-3">Personal Inform</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="username">Username</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+              </div>
+              <input type="text" class="form-control" id="username" placeholder="Username" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                Your username is required.
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+          </div>
+
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="country">Country</label>
+              <select class="custom-select d-block w-100" id="country" required>
+                <option value="">Choose...</option>
+                <option>Borongan</option>
+                <option>Oras</option>
+
+                <option>Arteche</option>
+                <option>Jipapad</option>
+                <option>Dolores</option>
+
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">State</label>
+              <select class="custom-select d-block w-100" id="state" required>
+                <option value="">Choose...</option>
+                <option>California</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="same-address">
+            <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="save-info">
+            <label class="custom-control-label" for="save-info">Save this information for next time</label>
+          </div>
+          <hr class="mb-4">
+
+          <h4 class="mb-3">ID Type</h4>
+
+          <div class="row my-3">
+            <div class="col-6">
+            <div class="custom-control custom-radio">
+              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+              <label class="custom-control-label" for="credit">Voters ID</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+              <label class="custom-control-label" for="debit">UMID</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+              <label class="custom-control-label" for="paypal">Drivers License</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="paypal">Tin ID</label>
+              </div>
+            </div>
+            
+            <div class="col-6">
+                <div class="custom-control custom-radio">
+                  <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                  <label class="custom-control-label" for="credit">Voters ID</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                  <label class="custom-control-label" for="debit">UMID</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                  <label class="custom-control-label" for="paypal">Drivers License</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                    <label class="custom-control-label" for="paypal">Tin ID</label>
+                  </div>
+                </div>
+            
+          </div>
+
+          
+
+
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Upload Government ID</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+
+          
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="cc-name">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cc-number">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="cc-expiration">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="cc-expiration">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+        </form>
+
+       
+          
+      </div>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2017-2018 Company Name</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../../../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../../../dist/js/bootstrap.min.js"></script>
+  <script src="../../../../assets/js/vendor/holder.min.js"></script>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
+
+
+
+
+<!-- f5 -->
+
+<!-- Faq Section -->
+
+<div class="container">
+    <div id="accordion">
+
+        <div class="card my-1">
+            <div class="card">
+          <div class="card-header">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+              Collapsible Group Item #1
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body">
+                <ul>
+                    <li> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam amet autem laudantium distinctio? Molestiae velit, impedit nostrum amet at vero provident non facilis tenetur sed sequi reiciendis iste error commodi?</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card my-1">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+                <ul>
+                    <li> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam amet autem laudantium distinctio? Molestiae velit, impedit nostrum amet at vero provident non facilis tenetur sed sequi reiciendis iste error commodi?</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card my-1">
+
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, rerum vero? 
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+                <ul>
+                    <li> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam amet autem laudantium distinctio? Molestiae velit, impedit nostrum amet at vero provident non facilis tenetur sed sequi reiciendis iste error commodi?</li>
+                </ul>
+             
+            </div>
+          </div>
+        </div>
+      
+      </div><!-- /Faq Section -->
+
+
+
+
+    </div>
+
+
+
+    <!-- f6 -->
+
+    <section id="services" class="services section">
+
+        <!-- Section Title -->
+        <div class="container section-title text-center" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row g-5">
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item item-cyan position-relative">
+                <img src="assistance/Cash Assistance for Other.jpg" alt="" width="100%">
+                <div>
+                  <h3>Nesciunt Mete</h3>
+                  <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                  <a href="" class="read-more stretched-link">Apply Now <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item item-orange position-relative">
+                <img src="assistance/Educational Assistance.jpg" alt="" width="100%">
+
+                <div>
+                  <h3>Eosle Commodi</h3>
+                  <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                  <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item item-teal position-relative">
+                <img src="assistance/Cash Assistance for Other.jpg" alt="" width="100%">
+
+                <div>
+                  <h3>Ledo Markt</h3>
+                  <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                  <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item item-red position-relative">
+                <img src="assistance/Cash Assistance for Other.jpg" alt="" width="100%">
+
+                <div>
+                  <h3>Asperiores Commodi</h3>
+                  <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+                  <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-item item-indigo position-relative">
+                <img src="assistance/Cash Assistance for Other.jpg" alt="" width="100%">
+
+                <div>
+                  <h3>Velit Doloremque.</h3>
+                  <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+                  <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-item item-pink position-relative">
+                <img src="assistance/Cash Assistance for Other.jpg" alt="" width="100%">
+
+                <div>
+                  <h3>Dolori Architecto</h3>
+                  <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+                  <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Services Section -->
+
+
+
+
+      <!-- f7 -->
+<!-- 
+<section id="contact" class="contact section">
+
+      <div class="container section-title text-center my-5 py-3" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>info@example.com</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row gy-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button class="btn btn-primary rounded-5" type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+sd
+
+
+
+<!-- FOOTER ---------------------------------------------------------------------->
+ <!-- Footer 16 - Bootstrap Brain Component -->
+ <!-- <footer class="py-4 py-md-5 main-color mt-5">
+
+  <div>
+    <div class="container border-bottom border-primary pb-4">
+      <div class="row gy-3 align-items-sm-center">
+        <div class="col-12 col-sm-6">
+          <div class="footer-logo-wrapper text-start">
+            <a href="#!">
+              <img src="Logo/MCL_Logo_4.png" width="40%" alt="BootstrapBrain Logo" class="img-fluid">
+              <img src="Logo/4ps.png" width="13%" alt="BootstrapBrain Logo" class="img-fluid">
+
+              
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="social-media-wrapper">
+            <ul class="m-0 list-unstyled d-flex justify-content-sm-end gap-2">
+              <li>
+                <a href="#!" class="btn btn-outline-light bsb-btn-circle bsb-btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-facebook text-lightx" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="btn btn-outline-light bsb-btn-circle bsb-btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="btn btn-outline-light bsb-btn-circle bsb-btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="btn btn-outline-light bsb-btn-circle bsb-btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="btn btn-outline-light bsb-btn-circle bsb-btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reddit" viewBox="0 0 16 16">
+                    <path d="M6.167 8a.83.83 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661m1.843 3.647c.315 0 1.403-.038 1.976-.611a.23.23 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83s.83-.381.83-.83a.831.831 0 0 0-1.66 0z" />
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.2.2 0 0 0-.153.028.2.2 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224q-.03.17-.029.353c0 1.795 2.091 3.256 4.669 3.256s4.668-1.451 4.668-3.256c0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="btn btn-outline-light bsb-btn-circle bsb-btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dribbble" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8m5.284 3.688a6.8 6.8 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A7 7 0 0 1 8 1.18m-2.907.642A43 43 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.87 6.87 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.82 6.82 0 0 1-1.752-4.564zM8 14.837a6.8 6.8 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.3 28.3 0 0 1 1.457 5.18A6.7 6.7 0 0 1 8 14.837m3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.77 6.77 0 0 1-2.924 4.573z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="main-color py-4 py-md-5 py-xl-7 py-xxl-10">
+    <div class="container">
+      <div class="row gy-4 gy-md-0">
+        <div class="col-6 col-md-3">
+          <h4 class="mb-3 fw-bold fs-7 text-light text-center">DOWNLOAD THE MCL APP</h4>
+          <div class="container-fluid d-flex justify-content-center align-items-start flex-column">
+            <img class="" src="others/googleplay.png" alt="BootstrapBrain Logo" width="100%" height="">
+              <img class="ms-5" src="others/qrcode.PNG" alt="BootstrapBrain Logo" width="60%" height="">
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="link-wrapper">
+            <h4 class="mb-3 fw-bold fs-7 text-light">Store</h4>
+            <ul class="m-0 list-unstyled">
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Shop Now
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Product Categories
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Special Offers
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  New Releases
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Exclusive Deals
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="link-wrapper">
+            <h4 class="mb-3 fw-bold fs-7 text-light">Partnerships</h4>
+            <ul class="m-0 list-unstyled">
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Partners
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Affiliates
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Collaborations
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Strategic Alliances
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="link-wrapper">
+            <h4 class="mb-3 fw-bold fs-7 text-light">Communities</h4>
+            <ul class="m-0 list-unstyled">
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Contributions
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Community Engagement
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Donate
+                </a>
+              </li>
+              <li class="mb-1">
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Volunteer Opportunities
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Local Initiatives
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-opacity-75 link-opacity-100-hover text-decoration-none fs-8 link-light">
+                  Community Partnerships
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div>
+    <div class="container border-top border-primary pt-4">
+      <div class="row gy-3 align-items-lg-center">
+        <div class="col-12 col-lg-6 order-1 order-lg-0">
+          <div class="copyright-wrapper d-block mb-1 fs-7 text-light text-start">
+            &copy; 2024. All Rights Reserved.
+          </div>
+          <div class="credit-wrapper d-block text-light fs-8 text-start">
+            Built by<a href="https://bootstrapbrain.com/" class="link-opacity-0 link-opacity-75-hover link-light text-decoration-none">
+              CCS Students</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="link-wrapper">
+            <ul class="m-0 list-unstyled d-flex justify-content-centerX justify-content-lg-end gap-2 gap-md-3">
+              <li>
+                <a href="#!" class="link-underline-opacity-0 link-opacity-75-hover link-offset-1 link-light fs-8 d-flex align-items-center pe-2 pe-md-3 bsb-sep bsb-sep-border">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-underline-opacity-0 link-opacity-75-hover link-offset-1 link-light fs-8 d-flex align-items-center pe-2 pe-md-3 bsb-sep bsb-sep-border">
+                  News
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-underline-opacity-0 link-opacity-75-hover link-offset-1 link-light fs-8 d-flex align-items-center pe-2 pe-md-3 bsb-sep bsb-sep-border">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-underline-opacity-0 link-opacity-75-hover link-offset-1 link-light fs-8 d-flex align-items-center pe-2 pe-md-3 bsb-sep bsb-sep-border">
+                  Announcements
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="link-underline-opacity-0 link-opacity-75-hover link-offset-1 link-light fs-8 d-flex align-items-center">
+                  Works
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer> -->
+
+</body>
+
+</html>

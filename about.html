@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="main.js"></script>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- DANIEL IMPORTED GOOGLE ROBOTO FONT -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+
+
+    <!-- Favicons -->
+    <!-- <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- SANS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- ROBOTO -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- OSWALD -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+
+
+    <!-- Vendor CSS Files -->
+    <!-- <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+
+    <!-- FONTS -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />     -->
+
+
+
+
+    <!-- <base href="img/"> -->
+
+<style>
+    .roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+.oswald-900> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+</style>
+
+
+
+
+</head>
+
+<body style="background-color: rgb(238, 238, 238);">
+    <!-- As a link -->
+    <nav id="web-nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <!-- navbar-expand-lg collapse the item when screen size is less than lg or 992 px -->
+        <div class="container-lg container-xxl">
+            <!-- Constrain the three column from expanding when screen size is lg or xxl -->
+
+            <!---------------------------->
+            <div class="navbar-nav navbar-brand">
+                <!-- First column: logo -->
+                <a class="mb-2" href="#">
+                    <img src="img/4Ps_Party_list_Logo_6.png" alt="4Ps Party list logo"
+                        style="width: 37px; height: 60px;">
+                </a>
+                <a class="" href="#">
+                    <img src="img/MCL_Logo_5.png" alt="MCL logo" style="width: 180px; height: 73px;">
+                </a>
+            </div>
+            <!---------------------------->
+
+            <!---------------------------->
+            <!-- Second column: 6 items -->
+            <ul class="navbar-nav">
+                <li id="nav-item-2" class="nav-item">
+                    <a class="dropdown-item dropdown-item-1 " aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li id="nav-item-1" class="nav-item">
+                    <a class="dropdown-item dropdown-item-1 active" aria-current="page" href="about.html">ABOUT</a>
+                </li>
+                <li id="nav-item-1" class="nav-item">
+                    <a class="dropdown-item dropdown-item-1" href="#">WORKS</a>
+                </li>
+                <li id="nav-item-2" class="nav-item">
+                    <a class="dropdown-item dropdown-item-1" href="News.html">NEWS</a>
+                </li>
+                <li id="nav-item-1" class="nav-item dropdown">
+                    <a id="p2" class="dropdown-item" href="#" data-bs-toggle="" aria-expanded="false">
+                        SERVICES
+                        <i class="fa fa-caret-down fa-sm ms-2"></i>
+                    </a>
+                    <ul id="p1" class="dropdown-menu rounded-0 p-0">
+                        <li><a class="dropdown-item dropdown-item-1 rounded-0" href="#">Medical Assistance</a></li>
+                        <li><a class="dropdown-item dropdown-item-1" href="#">Educational Assistance</a></li>
+                        <li><a class="dropdown-item dropdown-item-1" href="#">Burial Assistance</a></li>
+                        <li><a class="dropdown-item dropdown-item-1 rounded-0" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li id="nav-item-1" class="nav-item">
+                    <a class="dropdown-item dropdown-item-1" href="#">EVENT</a>
+                </li>
+                <li id="nav-item-3" class="nav-item">
+                    <a class="dropdown-item dropdown-item-1" href="#">CONTACT</a>
+                </li>
+            </ul>
+            <!---------------------------->
+
+            <!---------------------------->
+            <!-- Third column: notification and account icons -->
+            <div class="navbar-nav">
+
+                <!---------------------------->
+                <!-- Notifications -->
+                <div class="dropdown">
+                    <a data-mdb-dropdown-init class="nav-link text-reset hidden-arrow" href="#"
+                        id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+
+                        <span class="fa-stack fa-1x" data-count="1">
+                            <i class="fas fa-bell fa-xl mx-2 mt-3 text-muted"></i>
+                        </span>
+
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end p-0" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item rounded-top-1" href="#">Some news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item rounded-bottom-1" href="#">Something else here</a>
+                        </li>
+                    </ul>
+                </div>
+                <!---------------------------->
+
+                <!---------------------------->
+                <!-- Avatar -->
+                <div class="dropdown">
+                    <a data-mdb-dropdown-init class="nav-link d-flex align-items-center hidden-arrow" href="#"
+                        id="navbarDropdownMenuAvatar" role="button" aria-expanded="false">
+                        <!-- <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy" /> -->
+                        <i class="fas fa-circle-user fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end p-0" aria-labelledby="navbarDropdownMenuAvatar">
+                        <li>
+                            <a class="dropdown-item rounded-top-1" href="#">My profile</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item rounded-bottom-1" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <!---------------------------->
+
+            </div>
+            <!---------------------------->
+
+        </div>
+
+    </nav>
+
+    <!------------------------------------>
+
+
+    <!----------------------------------->
+    <nav id="mobile-nav" class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid" style="margin-top: -0.7rem;">
+
+            <button class="navbar-toggler m-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!---------------------------->
+            <!-- First column: logo -->
+            <div id="logo-mb-view" class="navbar-nav d-flex flex-row navbar-brand ms-3">
+                <a class="mb-2" href="#">
+                    <img src="img/4Ps_Party_list_Logo_6.png" alt="4Ps Party list logo"
+                        style="width: 37px; height: 60px;">
+                </a>
+                <a class="" href="#">
+                    <img src="img/MCL_Logo_5.png" alt="MCL logo" style="width: 180px; height: 73px;">
+                </a>
+            </div>
+            <!---------------------------->
+
+            <!---------------------------->
+            <!-- Third column: notification and account icons -->
+            <div class="navbar-nav d-flex flex-row">
+
+                <!---------------------------->
+                <!-- Notifications -->
+                <div id="notif-mb-view" class="dropdown">
+                    <a data-mdb-dropdown-init class="nav-link text-reset hidden-arrow p-2" href="#"
+                        id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+
+                        <span class="fa-stack fa-1x" data-count="1">
+                            <i class="fas fa-bell fa-xl mx-2 mt-3 text-muted"></i>
+                        </span>
+
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end p-0" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item rounded-top-1" href="#">Some news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item rounded-bottom-1" href="#">Something else here</a>
+                        </li>
+                    </ul>
+                </div>
+                <!---------------------------->
+
+                <!---------------------------->
+                <!-- Avatar -->
+                <div id="avatar-mb-view" class="dropdown">
+                    <a data-mdb-dropdown-init class="nav-link d-flex align-items-center hidden-arrow p-2" href="#"
+                        id="navbarDropdownMenuAvatar" role="button" aria-expanded="false">
+                        <!-- <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy" /> -->
+                        <i class="fas fa-circle-user fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end p-0" aria-labelledby="navbarDropdownMenuAvatar">
+                        <li>
+                            <a class="dropdown-item rounded-top-1" href="#">My profile</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item rounded-bottom-1" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <!---------------------------->
+
+            </div>
+            <!---------------------------->
+
+            <!---------------------------->
+            <!-- Second column: 6 items -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation link</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <!-- <ul class="navbar-nav">     -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">HOME</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">ABOUT</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">WORKS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">NEWS</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                SERVICES
+                                <i class="fa fa-caret-down fa-sm ms-2"></i>
+                            </a>
+                            <ul class="dropdown-menu p-0">
+                                <li><a class="dropdown-item rounded-top-1" href="#">Medical Assistance</a></li>
+                                <li><a class="dropdown-item" href="#">Educational Assistance</a></li>
+                                <li><a class="dropdown-item" href="#">Burial Assistance</a></li>
+                                <li><a class="dropdown-item rounded-bottom-1" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">EVENT</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+
+                        <li id="sm-mb-view-notif" class="nav-item">
+                            <a class="nav-link" href="#">NOTIFICATION</a>
+                        </li>
+
+                        <li id="sm-mb-view-acct" class="nav-item">
+                            <a class="nav-link" href="#">ACCOUNT</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <!---------------------------->
+
+        </div>
+    </nav>
+        
+        ABOUT INTRO
+        
+        <div class="container d-flex flex-column justify-content-center  align-items-center" style="margin-top: 8rem;">
+    
+          <!-- section1 -->
+
+        <section class="px-3 row d-flex justify-content-center align-items-center ">
+            <h1 class=" text-center">Narrative Profile of</h1>
+    
+            <div class="col-12 col-lg-7 col-md-9 d-flex align-items-center justify-content-center">
+    
+                <img src="img/pfp/mclpfp.jpg" class="w-75" alt="">
+            </div>
+    
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-12 col-sm-10 my-2 col-md-9 col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                    <h1 class="text-center py-2">HONORABLE MARCELINO C. LIBANAN</h1>
+                    <h3>House Minority Leader & 4Ps Partylist Representative</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id temporibus ad quisquam! Voluptas voluptates iusto quis alias. Libero illum molestiae natus alias fugiat at suscipit! Sequi delectus excepturi quas eos.lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet unde, corrupti quam modi, laudantium, repudiandae ipsum totam expedita illo eaque reprehenderit dignissimos autem. Aperiam ratione labore dolorum debitis quam suscipit.Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+    
+                    <h1 class="text-center py-3">Early Life
+                    </h1>
+                    <p>Ferdinand R. Marcos Jr., commonly referred to as Bongbong and by the initials BBM, was born on the 13th of September 1957 in the town of Batac, Ilocos Norte.  He attended La Salle Greenhills elementary school (1964), and completed his secondary education at Worth School in West Sussex, England (1974).  He earned a Special Diploma in Social Studies from Oxford University (1978).  Bongbong subsequently enrolled at the Wharton School of Business for a Master of Business Administration, which was eventually cut short due to him being elected in 1980 as Vice Governor of his home province, Ilocos Norte.</p>
+                </div>
+                </div>
+    
+        
+        </section>
+
+
+        <!-- section2 -->
+
+        <section class="px-3 row d-flex justify-content-center align-items-center ">
+          
+
+
+          <div class="col-12 col-lg-7 col-md-9 d-flex align-items-center justify-content-center">
+  
+              <img src="img/News/news1.jpg" class="w-100 px-2" alt="">
+          </div>
+  
+          <div class="row d-flex justify-content-center align-items-center">
+              <div class="col-12 col-sm-10 my-2 col-md-9 col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                  <h1 class="text-center py-2">Familyss</h1>
+                  <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+
+                  <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+
+                  <p>Ferdinand R. Marcos Jr., commonly referred to as Bongbong and by the initials BBM, was born on the 13th of September 1957 in the town of Batac, Ilocos Norte.  He attended La Salle Greenhills elementary school (1964), and completed his secondary education at Worth School in West Sussex, England (1974).  He earned a Special Diploma in Social Studies from Oxford University (1978).  Bongbong subsequently enrolled at the Wharton School of Business for a Master of Business Administration, which was eventually cut short due to him being elected in 1980 as Vice Governor of his home province, Ilocos Norte.</p>
+  
+              </div>
+            </div>
+  
+      
+          </section>
+
+          <div class="bg-light col-12 col-lg-7 col-md-9 d-flex flex-column justify-content-center">
+            <hr class="my-5">
+          </div>
+
+          <section class="px-3 row d-flex justify-content-center align-items-center ">
+          
+            <h1 class="text-center py-2">GOVERNMENT SERVICE RECORD</h1>
+
+
+            <div class="col-12 col-lg-7 col-md-9 d-flex align-items-center justify-content-center">
+    
+                <img src="img/News/news7.jpg" class="w-100 px-2" alt="">
+            </div>
+    
+            <div class="row d-flex justify-content-center align-items-center">
+              
+                <div class="col-12 col-sm-10 my-2 col-md-9 col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                  <h4 class="mb-3">Governor (1983 to 1986; 1998 to 2007)</h4>
+                    
+                    <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+  
+                    <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+  
+                    <p>Ferdinand R. Marcos Jr., commonly referred to as Bongbong and by the initials BBM, was born on the 13th of September 1957 in the town of Batac, Ilocos Norte.  He attended La Salle Greenhills elementary school (1964), and completed his secondary education at Worth School in West Sussex, England (1974).  He earned a Special Diploma in Social Studies from Oxford University (1978).  Bongbong subsequently enrolled at the Wharton School of Business for a Master of Business Administration, which was eventually cut short due to him being elected in 1980 as Vice Governor of his home province, Ilocos Norte.</p>
+    
+                </div>
+              </div>
+    
+              <div class="col-12 col-lg-7 col-md-9 d-flex align-items-center justify-content-center">
+    
+                <img src="img/News/news4.jpg" class="w-100 px-2" alt="">
+            </div>
+    
+            <div class="row d-flex justify-content-center align-items-center">
+              
+                <div class="col-12 col-sm-10 my-2 col-md-9 col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                  <h4 class="mb-3">Governor (1983 to 1986; 1998 to 2007)</h4>
+                    
+                    <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+  
+                    <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+  
+                    <p>Ferdinand R. Marcos Jr., commonly referred to as Bongbong and by the initials BBM, was born on the 13th of September 1957 in the town of Batac, Ilocos Norte.  He attended La Salle Greenhills elementary school (1964), and completed his secondary education at Worth School in West Sussex, England (1974).  He earned a Special Diploma in Social Studies from Oxford University (1978).  Bongbong subsequently enrolled at the Wharton School of Business for a Master of Business Administration, which was eventually cut short due to him being elected in 1980 as Vice Governor of his home province, Ilocos Norte.</p>
+    
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-7 col-md-9 d-flex align-items-center justify-content-center">
+    
+                <img src="img/News/news5.jpg" class="w-100 px-2" alt="">
+            </div>
+    
+            <div class="row d-flex justify-content-center align-items-center">
+              
+                <div class="col-12 col-sm-10 my-2 col-md-9 col-lg-7 d-flex flex-column align-items-center justify-content-center">
+                  <h4 class="mb-3">Governor (1983 to 1986; 1998 to 2007)</h4>
+                    
+                    <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+  
+                    <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+  
+                    <p>Ferdinand R. Marcos Jr., commonly referred to as Bongbong and by the initials BBM, was born on the 13th of September 1957 in the town of Batac, Ilocos Norte.  He attended La Salle Greenhills elementary school (1964), and completed his secondary education at Worth School in West Sussex, England (1974).  He earned a Special Diploma in Social Studies from Oxford University (1978).  Bongbong subsequently enrolled at the Wharton School of Business for a Master of Business Administration, which was eventually cut short due to him being elected in 1980 as Vice Governor of his home province, Ilocos Norte.</p>
+    
+                </div>
+              </div>
+        
+            </section>
+
+
+            </section>
+
+          <div class="   col-12 col-lg-7 col-md-9 d-flex flex-column justify-content-center">
+            <hr class="my-5">
+          </div>
+
+      
+
+    
+
+
+
+
+
+    <!-- section3 -->
+    <section class="px-3 row d-flex justify-content-center align-items-center ">
+    
+      <h1 class="text-center py-2">GOVERNMENT SERVICE RECORD</h1>
+
+
+      <div class="col-12 col-lg-7 col-md-9 d-flex align-items-center justify-content-center">
+
+          <img src="img/News/news7.jpg" class="w-100 px-2" alt="">
+      </div>
+
+      <div class="row d-flex justify-content-center align-items-center">
+        
+          <div class="col-12 col-sm-10 my-2 col-md-9 col-lg-7 d-flex flex-column align-items-center justify-content-center">
+            <h4 class="mb-3">Governor (1983 to 1986; 1998 to 2007)</h4>
+              
+              <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+
+              <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+
+              <p>Ferdinand R. Marcos Jr., commonly referred to as Bongbong and by the initials BBM, was born on the 13th of September 1957 in the town of Batac, Ilocos Norte.  He attended La Salle Greenhills elementary school (1964), and completed his secondary education at Worth School in West Sussex, England (1974).  He earned a Special Diploma in Social Studies from Oxford University (1978).  Bongbong subsequently enrolled at the Wharton School of Business for a Master of Business Administration, which was eventually cut short due to him being elected in 1980 as Vice Governor of his home province, Ilocos Norte.</p>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7 col-md-9 d-flex align-items-center justify-content-center">
+
+          <img src="img/News/news4.jpg" class="w-100 px-2" alt="">
+      </div>
+
+      <div class="row d-flex justify-content-center align-items-center">
+        
+          <div class="col-12 col-sm-10 my-2 col-md-9 col-lg-7 d-flex flex-column align-items-center justify-content-center">
+            <h4 class="mb-3">Governor (1983 to 1986; 1998 to 2007)</h4>
+              
+              <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+
+              <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+
+              <p>Ferdinand R. Marcos Jr., commonly referred to as Bongbong and by the initials BBM, was born on the 13th of September 1957 in the town of Batac, Ilocos Norte.  He attended La Salle Greenhills elementary school (1964), and completed his secondary education at Worth School in West Sussex, England (1974).  He earned a Special Diploma in Social Studies from Oxford University (1978).  Bongbong subsequently enrolled at the Wharton School of Business for a Master of Business Administration, which was eventually cut short due to him being elected in 1980 as Vice Governor of his home province, Ilocos Norte.</p>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7 col-md-9 d-flex align-items-center justify-content-center">
+
+          <img src="img/News/news5.jpg" class="w-100 px-2" alt="">
+      </div>
+
+      <div class="row d-flex justify-content-center align-items-center">
+        
+          <div class="col-12 col-sm-10 my-2 col-md-9 col-lg-7 d-flex flex-column align-items-center justify-content-center">
+            <h4 class="mb-3">Governor (1983 to 1986; 1998 to 2007)</h4>
+              
+              <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+
+              <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+
+              <p>Ferdinand R. Marcos Jr., commonly referred to as Bongbong and by the initials BBM, was born on the 13th of September 1957 in the town of Batac, Ilocos Norte.  He attended La Salle Greenhills elementary school (1964), and completed his secondary education at Worth School in West Sussex, England (1974).  He earned a Special Diploma in Social Studies from Oxford University (1978).  Bongbong subsequently enrolled at the Wharton School of Business for a Master of Business Administration, which was eventually cut short due to him being elected in 1980 as Vice Governor of his home province, Ilocos Norte.</p>
+
+          </div>
+        </div>
+  
+      </section>
+
+
+      </section>
+
+    <div class=" col-12 col-lg-7 col-md-9 d-flex flex-column justify-content-center">
+      <hr class="my-5">
+      <h1 class="text-center py-2">LAWS PASSED</h1>
+    </div>
+
+    <section class="px-3 row d-flex justify-content-center align-items-center ">
+    
+      <div class="row d-flex justify-content-center align-items-center">
+
+        
+        
+          <div class="col-12 col-sm-10 my-2 col-md-9 col-lg-7 d-flex flex-column align-items-center justify-content-center">
+            <ul>
+              <li><strong>Philippine National Railways Charter Extension</strong> - Republic Act RA10638 (HB04089), an act extending the corporate life of the Philippine National Railways for another 50 years which was enacted on June 16, 2014</li>
+              <hr>
+              <li><strong>Sangguniang Kabataan Reform Act of 2015</strong> - Republic Act RA10742 (HB06043), an act establishing reforms in the Sangguniang Kabataan creating enabling mechanisms for meaningful youth participation in nation- building which was enacted on January 15, 2016</li>
+              <hr>
+
+              <li><strong>Tax Incentives Management and Transparency Act</strong> - Republic Act RA10708, (HB05831), an act promoting fiscal accountability and transparency in the grant and management of tax incentives which was enacted on December 9, 2015</li>
+              <hr>
+
+              <li><strong> Open High School System Act- Republic Act RA10665 (HB04085)</strong>, an act establishing and appropriating funds for the open high school system in the Philippines which was enacted on July 9, 2015</li>
+            </ul>
+         
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7 col-md-9 d-flex align-items-center justify-content-center">
+
+          <img src="img/News/news4.jpg" class="w-100 px-2" alt="">
+      </div>
+
+      <div class="row d-flex justify-content-center align-items-center">
+        
+          <div class="col-12 col-sm-10 my-2 col-md-9 col-lg-7 d-flex flex-column align-items-center justify-content-center">
+            <h4 class="mb-3">Governor (1983 to 1986; 1998 to 2007)</h4>
+              
+              <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+
+              <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+
+              <p>Ferdinand R. Marcos Jr., commonly referred to as Bongbong and by the initials BBM, was born on the 13th of September 1957 in the town of Batac, Ilocos Norte.  He attended La Salle Greenhills elementary school (1964), and completed his secondary education at Worth School in West Sussex, England (1974).  He earned a Special Diploma in Social Studies from Oxford University (1978).  Bongbong subsequently enrolled at the Wharton School of Business for a Master of Business Administration, which was eventually cut short due to him being elected in 1980 as Vice Governor of his home province, Ilocos Norte.</p>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7 col-md-9 d-flex align-items-center justify-content-center">
+
+          <img src="img/News/news5.jpg" class="w-100 px-2" alt="">
+      </div>
+
+      <div class="row d-flex justify-content-center align-items-center">
+        
+          <div class="col-12 col-sm-10 my-2 col-md-9 col-lg-7 d-flex flex-column align-items-center justify-content-center">
+            <h4 class="mb-3">Governor (1983 to 1986; 1998 to 2007)</h4>
+              
+              <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+
+              <p>Ferdinand R. Marcos Jr. has dedicated his life to serving the Filipino people for over two decades.  His long and faithful service has been one characterized by his genuine care for the welfare of his constituents, and a firm determination to elevate the quality of life of every Filipino..</p>
+
+              <p>Ferdinand R. Marcos Jr., commonly referred to as Bongbong and by the initials BBM, was born on the 13th of September 1957 in the town of Batac, Ilocos Norte.  He attended La Salle Greenhills elementary school (1964), and completed his secondary education at Worth School in West Sussex, England (1974).  He earned a Special Diploma in Social Studies from Oxford University (1978).  Bongbong subsequently enrolled at the Wharton School of Business for a Master of Business Administration, which was eventually cut short due to him being elected in 1980 as Vice Governor of his home province, Ilocos Norte.</p>
+
+          </div>
+        </div>
+  
+      </section>
+
+    
+    </div>
+  
+    
+  
+
+    
+
+
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- FOOTER ---------------------------------------------------------------------->
+    
+    <div class="container-fluid  px-0" style="background-color: #0032A0;">
+    
+        <footer class="text-center mx-0 text-lg-start text-white">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row my-4">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      
+                <div class="shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                  <img src="img/Logo/4ps.png" height="150px" alt=""
+                       loading="lazy" />
+                       <img src="img/Logo/MCL_Logo_4.png" width="200px" alt=""
+                       loading="lazy" class="ms-2"/>
+                </div>
+      
+                <p class="text-center">Homless animal shelter The budgetary unit of the Capital City of Warsaw</p>
+      
+                <ul class="list-unstyled d-flex flex-row justify-content-center">
+                  <li>
+                    <a class="text-white px-2" href="#!">
+                      <i class="fab fa-facebook-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-white px-2" href="#!">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-white ps-2" href="#!">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+      
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Navigation</h5>
+      
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>When your pet is missing</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Recently found</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>How to adopt?</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Pets for adoption</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Material gifts</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Help with walks</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Volunteer activities</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Socials</h5>
+      
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Facebook</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Instagram</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Twitter</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Youtube</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Spotify</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Threads</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Contact Information</h5>
+      
+                <ul class="list-unstyled">
+                  <li>
+                    <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 57 Street, Poland</p>
+                  </li>
+                  <li>
+                    <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
+                  </li>
+                  <li>
+                    <p><i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com</p>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+          </div>
+    
+          <!-- Copyright -->
+        </footer>
+      
+      </div>
+    
+</body>
+
+</html>
